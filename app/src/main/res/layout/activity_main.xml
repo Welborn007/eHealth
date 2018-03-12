@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/Name"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/Dept"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/pulseOximeter"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                fancy:fb_text="Pulse Oximeter"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                fancy:fb_defaultColor="@color/MoneyGreen"
+                fancy:fb_focusColor="@color/colorPrimary"
+                fancy:fb_radius="5dp"
+                fancy:fb_textColor="@color/white"
+                fancy:fb_textSize="16sp" />
+
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/bloodPressure"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                fancy:fb_text="Blood Pressure"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                fancy:fb_defaultColor="@color/MoneyGreen"
+                fancy:fb_focusColor="@color/colorPrimary"
+                fancy:fb_radius="5dp"
+                fancy:fb_textColor="@color/white"
+                fancy:fb_textSize="16sp" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/weightScale"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            fancy:fb_text="Weight Scale"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            fancy:fb_defaultColor="@color/MoneyGreen"
+            fancy:fb_focusColor="@color/colorPrimary"
+            fancy:fb_radius="5dp"
+            fancy:fb_textColor="@color/white"
+            fancy:fb_textSize="16sp" />
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/glucoMeter"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            fancy:fb_text="GlucoMeter"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            fancy:fb_defaultColor="@color/MoneyGreen"
+            fancy:fb_focusColor="@color/colorPrimary"
+            fancy:fb_radius="5dp"
+            fancy:fb_textColor="@color/white"
+            fancy:fb_textSize="16sp" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/Thermometer"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                fancy:fb_text="Thermometer"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                fancy:fb_defaultColor="@color/MoneyGreen"
+                fancy:fb_focusColor="@color/colorPrimary"
+                fancy:fb_radius="5dp"
+                fancy:fb_textColor="@color/white"
+                fancy:fb_textSize="16sp" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/Stethescope"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                fancy:fb_text="Stethoscope"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                fancy:fb_defaultColor="@color/MoneyGreen"
+                fancy:fb_focusColor="@color/colorPrimary"
+                fancy:fb_radius="5dp"
+                fancy:fb_textColor="@color/white"
+                fancy:fb_textSize="16sp" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

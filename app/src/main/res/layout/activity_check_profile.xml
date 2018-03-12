@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    tools:context="kesari.com.kesarie_healthmonitoring.Profile.CheckProfileActivity">
+
+    <TextView
+        android:text="Kesari eHealth Monitoring"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/rsID"
+        android:hint="Enter RSID"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:inputType="textCapCharacters"
+        android:layout_margin="50dp"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/proceed"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        fancy:fb_text="Proceed"
+        android:gravity="center"
+        fancy:fb_defaultColor="@color/MoneyGreen"
+        fancy:fb_focusColor="@color/colorPrimary"
+        fancy:fb_radius="5dp"
+        fancy:fb_textColor="@color/white"
+        fancy:fb_textSize="16sp" />
+
+</LinearLayout>
