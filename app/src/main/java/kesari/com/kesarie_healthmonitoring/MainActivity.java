@@ -7,12 +7,13 @@ import android.view.View;
 import android.widget.TextView;
 
 import kesari.com.kesarie_healthmonitoring.PulseOximeter.PulseOximeterActivity;
+import kesari.com.kesarie_healthmonitoring.Stethescope.KAndroidAudioPlayerActivity;
 import kesari.com.kesarie_healthmonitoring.Utils.SharedPrefUtil;
 import mehdi.sakout.fancybuttons.FancyButton;
 
 public class MainActivity extends AppCompatActivity {
 
-    FancyButton pulseOximeter,bloodPressure,weightScale,glucoMeter,Thermometer;
+    FancyButton pulseOximeter,bloodPressure,weightScale,glucoMeter,Thermometer,Stethescope;
     TextView Name,Dept;
 
     @Override
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         weightScale = (FancyButton) findViewById(R.id.weightScale);
         glucoMeter = (FancyButton) findViewById(R.id.glucoMeter);
         Thermometer = (FancyButton) findViewById(R.id.Thermometer);
+        Stethescope = (FancyButton) findViewById(R.id.Stethescope);
 
         Name = (TextView) findViewById(R.id.Name);
         Dept = (TextView) findViewById(R.id.Dept);
@@ -72,6 +74,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, BaseActivity.class);
                 intent.putExtra("value","TM");
+                startActivity(intent);
+            }
+        });
+
+        Stethescope.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, KAndroidAudioPlayerActivity.class);
                 startActivity(intent);
             }
         });
